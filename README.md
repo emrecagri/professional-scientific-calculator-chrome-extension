@@ -4,6 +4,8 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-green)
 ![Platform](https://img.shields.io/badge/platform-Chrome%20Extension-orange)
 
+[🇹🇷 Türkçe](#-türkçe) | [🇬🇧 English](#-english) | [🇹🇷 Ekran Görüntüleri](#ekran-görüntüleri) | [🇬🇧 Screenshots](#screenshots)
+
 ---
 
 ## 🇹🇷 Türkçe (Turkish)
@@ -48,7 +50,7 @@ Bu projeyi bilgisayarınızda geliştirmek veya incelemek için:
 
 ## 🇬🇧 English
 
-**[Google Web Store Link: https://go.emrecb.com/bilimsel-hesap-makinesi-web-store](https://go.emrecb.com/bilimsel-hesap-makinesi-web-store)**
+**[Google Web Store Link: https://go.emrecb.com/scientific-calculator-web-store](https://go.emrecb.com/scientific-calculator-web-store)**
 
 ### 📌 About The Project
 
@@ -94,9 +96,9 @@ This project is licensed under the GNU General Public License v3.0 (GPLv3). See 
 
 ---
 
-## 👨‍💻 Author
+## Ekran Görüntüleri 
+## Screenshots
 
-**Emre Çağrı Başgül**
-
-* Website: [emrecb.com](https://emrecb.com)
-* Chrome Web Store: [Download Extension](https://go.emrecb.com/bilimsel-hesap-makinesi-web-store)
+![image](screenshots/1.png)
+![image](screenshots/2.png)
+![image](screenshots/3.png)
