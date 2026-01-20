@@ -4,11 +4,11 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-green)
 ![Platform](https://img.shields.io/badge/platform-Chrome%20Extension-orange)
 
-**[Google Web Store Bağlantısı](https://go.emrecb.com/bilimsel-hesap-makinesi-web-store)**
-
 ---
 
 ## 🇹🇷 Türkçe (Turkish)
+
+**[Google Web Store Bağlantısı: https://go.emrecb.com/bilimsel-hesap-makinesi-web-store](https://go.emrecb.com/bilimsel-hesap-makinesi-web-store)**
 
 ### 📌 Proje Hakkında
 
@@ -47,6 +47,8 @@ Bu projeyi bilgisayarınızda geliştirmek veya incelemek için:
 ---
 
 ## 🇬🇧 English
+
+**[Google Web Store Link: https://go.emrecb.com/bilimsel-hesap-makinesi-web-store](https://go.emrecb.com/bilimsel-hesap-makinesi-web-store)**
 
 ### 📌 About The Project
 
