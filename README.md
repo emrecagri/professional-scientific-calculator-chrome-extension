@@ -8,7 +8,7 @@
 
 ---
 
-## 🇹🇷 Türkçe (Turkish)
+## 🇹🇷 Türkçe
 
 **[Google Web Store Bağlantısı: https://go.emrecb.com/bilimsel-hesap-makinesi-web-store](https://go.emrecb.com/bilimsel-hesap-makinesi-web-store)**
 
