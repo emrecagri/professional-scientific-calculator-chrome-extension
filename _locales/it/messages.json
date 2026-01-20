@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Calcolatrice Scientifica - Loruv",
+    "description": "Nome dell'applicazione"
+  },
+  "appDesc": {
+    "message": "Calcolatrice scientifica moderna in modalità scura. Passa facilmente tra modalità standard e scientifica.",
+    "description": "Descrizione dell'applicazione"
+  }
+}

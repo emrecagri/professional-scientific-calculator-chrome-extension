@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Bilimsel Hesap Makinesi - Loruv",
+    "description": "Uygulamanın adı"
+  },
+  "appDesc": {
+    "message": "Profesyonel, modern ve koyu temalı bir bilimsel hesap makinesi. Normal ve bilimsel modlar arasında sorunsuz geçiş yapın.",
+    "description": "Uygulamanın açıklaması"
+  }
+}

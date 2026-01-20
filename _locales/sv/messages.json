@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Vetenskaplig Kalkylator - Loruv",
+    "description": "Applikationens namn"
+  },
+  "appDesc": {
+    "message": "Modern vetenskaplig kalkylator med mörkt tema. Växla enkelt mellan standard- och vetenskapsläge.",
+    "description": "Applikationsbeskrivning"
+  }
+}

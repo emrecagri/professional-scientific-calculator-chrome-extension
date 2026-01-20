@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Máy Tính Khoa Học - Loruv",
+    "description": "Tên ứng dụng"
+  },
+  "appDesc": {
+    "message": "Máy tính khoa học hiện đại với giao diện tối. Dễ dàng chuyển đổi giữa chế độ tiêu chuẩn và khoa học.",
+    "description": "Mô tả ứng dụng"
+  }
+}

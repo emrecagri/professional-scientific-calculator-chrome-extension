@@ -1,0 +1,176 @@
+:root {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --operator-bg: #f59e0b;
+    --operator-text: #ffffff;
+    --equal-bg: #3b82f6;
+    --danger: #ef4444;
+    --sci-bg: #0f172a;
+    --sci-text: #60a5fa;
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-hard: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    --radius: 10px;
+}
+
+* { box-sizing: border-box; user-select: none; font-family: 'Inter', system-ui, sans-serif; }
+
+body {
+    margin: 0; padding: 0;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    width: 340px;
+    height: 560px;
+    overflow: hidden;
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.expanded { width: 520px; }
+
+.app-container {
+    display: flex; flex-direction: column;
+    height: 100%; padding: 16px;
+    position: relative;
+}
+
+/* Toolbar */
+.toolbar {
+    display: flex; justify-content: space-between; align-items: center;
+    height: 40px; margin-bottom: 10px;
+}
+.tools-left, .tools-right { display: flex; align-items: center; gap: 8px; }
+.divider { width: 1px; height: 16px; background: var(--bg-tertiary); margin: 0 4px; }
+.tool-btn {
+    background: transparent; border: none; color: var(--text-secondary);
+    cursor: pointer; border-radius: 6px; transition: 0.2s;
+    display: flex; align-items: center; justify-content: center;
+}
+.tool-btn:hover { background: var(--bg-secondary); color: var(--text-primary); }
+.tool-btn.icon-only svg { width: 22px; height: 22px; }
+.text-btn { font-size: 12px; font-weight: 700; padding: 4px 8px; border: 1px solid var(--bg-tertiary); letter-spacing: 0.5px; }
+
+.indicator { font-size: 12px; font-weight: bold; color: var(--operator-bg); padding: 0 6px; }
+.indicator.hidden { opacity: 0; }
+
+/* Display */
+.display-section {
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+    padding: 20px;
+    text-align: right;
+    flex-shrink: 0;
+    margin-bottom: 16px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+    min-height: 110px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    position: relative;
+    cursor: pointer;
+}
+.display-section:active { background: #243045; }
+
+.expression-line {
+    color: var(--text-secondary); font-size: 14px; min-height: 20px;
+    margin-bottom: 4px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.result-line {
+    color: var(--text-primary); font-size: 44px; font-weight: 300;
+    line-height: 1.1; overflow: hidden; white-space: nowrap;
+}
+
+.toast {
+    position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+    background: var(--accent); color: white; padding: 4px 10px;
+    border-radius: 20px; font-size: 11px; opacity: 0; transition: 0.3s; pointer-events: none;
+}
+.toast.visible { opacity: 1; top: 15px; }
+
+/* Kesir Görünümü (HTML Rendering) */
+.fraction-wrap { display: inline-flex; flex-direction: column; vertical-align: middle; margin: 0 4px; text-align: center; font-size: 0.75em; }
+.frac-top { border-bottom: 1px solid currentColor; padding-bottom: 1px; display: block; }
+.frac-bottom { padding-top: 1px; display: block; }
+.frac-whole { margin-right: 6px; font-size: 1.2em; }
+
+/* Keypad Layout */
+.keypad-container {
+    flex: 1; display: flex; gap: 12px; height: 100%;
+}
+
+/* Bilimsel Panel */
+.scientific-pad {
+    display: none; width: 160px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 8px;
+}
+body.expanded .scientific-pad { display: grid; }
+
+/* Standart Panel */
+.standard-pad {
+    flex: 1; display: flex; flex-direction: column; gap: 8px;
+}
+.row {
+    display: flex; gap: 8px; flex: 1;
+}
+
+/* Buton Stilleri */
+.key {
+    flex: 1; border: none; border-radius: 8px;
+    font-size: 20px; font-weight: 400; color: var(--text-primary);
+    background: var(--bg-tertiary); cursor: pointer;
+    transition: all 0.1s;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0; padding: 0;
+}
+.key:active { transform: translateY(2px); box-shadow: none; }
+.key:hover { filter: brightness(1.15); }
+
+/* Renk Kodları */
+.key.operator { background: var(--operator-bg); color: #fff; font-size: 24px; font-weight: 500; }
+.key.equal { background: var(--equal-bg); color: #fff; font-size: 28px; }
+.key.function { background: var(--bg-tertiary); color: var(--text-secondary); font-size: 18px; }
+.key.memory { font-size: 14px; font-weight: 600; color: var(--operator-bg); background: transparent; }
+.key.sci-func { 
+    font-size: 14px; font-family: 'Segoe UI', sans-serif; 
+    background: var(--bg-secondary); color: var(--sci-text);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.key.sci-func[data-cmd="angle-toggle"] { color: var(--operator-bg); font-weight: bold; border-color: var(--operator-bg); }
+
+/* History Overlay */
+.history-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(15, 23, 42, 0.98); backdrop-filter: blur(8px);
+    z-index: 50;
+    transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex; flex-direction: column;
+}
+.history-overlay.open { transform: translateY(0); }
+
+.history-header {
+    height: 50px; display: flex; justify-content: space-between; align-items: center;
+    padding: 0 16px; border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.history-title { font-weight: 600; font-size: 16px; }
+.close-btn { background: none; border: none; color: var(--text-secondary); cursor: pointer; padding: 8px; }
+.close-btn:hover { color: var(--text-primary); }
+
+.history-content { flex: 1; overflow-y: auto; padding: 10px; }
+.history-item {
+    padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.05);
+    cursor: pointer; transition: background 0.1s;
+}
+.history-item:hover { background: rgba(255,255,255,0.05); }
+.h-expr { display: block; color: var(--text-secondary); font-size: 13px; margin-bottom: 4px; }
+.h-result { display: block; color: var(--accent); font-size: 18px; font-weight: 500; }
+
+.history-footer { padding: 16px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; }
+.clear-history-btn {
+    background: rgba(239, 68, 68, 0.1); color: var(--danger); border: none;
+    padding: 8px 16px; border-radius: 6px; font-size: 13px; cursor: pointer;
+}
+.clear-history-btn:hover { background: rgba(239, 68, 68, 0.2); }

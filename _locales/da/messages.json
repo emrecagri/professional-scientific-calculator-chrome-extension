@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Videnskabelig Lommeregner - Loruv",
+    "description": "Applikationens navn"
+  },
+  "appDesc": {
+    "message": "Moderne videnskabelig lommeregner med mørkt tema. Skift nemt mellem standard- og videnskabstilstand.",
+    "description": "Applikationsbeskrivelse"
+  }
+}

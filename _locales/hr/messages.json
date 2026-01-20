@@ -1,0 +1,4 @@
+{
+  "appName": { "message": "Znanstveni Kalkulator - Loruv", "description": "Naziv aplikacije" },
+  "appDesc": { "message": "Moderan znanstveni kalkulator s tamnom temom. Jednostavno prebacivanje između standardnog i znanstvenog načina.", "description": "Opis aplikacije" }
+}

@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Vědecká Kalkulačka - Loruv",
+    "description": "Název aplikace"
+  },
+  "appDesc": {
+    "message": "Moderní vědecká kalkulačka s tmavým motivem. Snadné přepínání mezi standardním a vědeckým režimem.",
+    "description": "Popis aplikace"
+  }
+}

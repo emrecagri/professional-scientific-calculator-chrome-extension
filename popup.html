@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <div class="toolbar">
+            <div class="tools-left">
+                <button id="historyTrigger" class="tool-btn icon-only" title="History">
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.5" d="M12 8V12L14.5 14.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5.60414 5.60414L5.07381 5.07381V5.07381L5.60414 5.60414ZM4.33776 6.87052L3.58777 6.87429C3.58984 7.28556 3.92272 7.61844 4.33399 7.62051L4.33776 6.87052ZM6.87954 7.6333C7.29375 7.63539 7.63122 7.30129 7.6333 6.88708C7.63538 6.47287 7.30129 6.1354 6.88708 6.13332L6.87954 7.6333ZM5.07496 4.3212C5.07288 3.90699 4.73541 3.5729 4.3212 3.57498C3.90699 3.57706 3.5729 3.91453 3.57498 4.32874L5.07496 4.3212ZM3.82661 10.7849C3.88286 10.3745 3.59578 9.99627 3.1854 9.94002C2.77503 9.88377 2.39675 10.1708 2.3405 10.5812L3.82661 10.7849ZM18.8622 5.13777C15.042 1.31758 8.86873 1.27889 5.07381 5.07381L6.13447 6.13447C9.33358 2.93536 14.5571 2.95395 17.8016 6.19843L18.8622 5.13777ZM5.13777 18.8622C8.95796 22.6824 15.1313 22.7211 18.9262 18.9262L17.8655 17.8655C14.6664 21.0646 9.44291 21.0461 6.19843 17.8016L5.13777 18.8622ZM18.9262 18.9262C22.7211 15.1313 22.6824 8.95796 18.8622 5.13777L17.8016 6.19843C21.0461 9.44291 21.0646 14.6664 17.8655 17.8655L18.9262 18.9262ZM5.07381 5.07381L3.80743 6.34019L4.86809 7.40085L6.13447 6.13447L5.07381 5.07381ZM4.33399 7.62051L6.87954 7.6333L6.88708 6.13332L4.34153 6.12053L4.33399 7.62051ZM5.08775 6.86675L5.07496 4.3212L3.57498 4.32874L3.58777 6.87429L5.08775 6.86675ZM2.3405 10.5812C1.93907 13.5099 2.87392 16.5984 5.13777 18.8622L6.19843 17.8016C4.27785 15.881 3.48663 13.2652 3.82661 10.7849L2.3405 10.5812Z" fill="#ffffff"></path> </g></svg>
+                </button>
+                <div class="divider"></div>
+                <button id="formatToggle" class="tool-btn text-btn" title="Display Format">DEC</button>
+            </div>
+
+            <div class="tools-right">
+                <div id="memoryIndicator" class="indicator hidden">M</div>
+                <div class="divider"></div>
+                <button id="modeTrigger" class="tool-btn icon-only" title="Scientific Mode">
+
+                   <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" viewBox="414 -1 700 700"><g id="document" fill="none" fill-rule="nonzero" font-family="none" font-weight="none" font-size="none"><rect x="414" y="-0.71429" transform="scale(1,1.4)" width="700" height="500" id="Shape-1-1"/></g><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none"><g id="stage"><g id="layer1-1"><g id="Group-1"><g id="Group-1-1"><path d="M610.92562,224.76781l-18.7085,21.14474l1.83867,7.99823h48.17323c-9.8369,56.90693 -17.19159,108.20591 -31.30341,187.26885c-16.86983,100.85122 -26.56883,125.62734 -32.31468,134.6828c-5.05635,8.96353 -12.31911,13.60618 -22.15601,13.60618c-10.8022,0 -30.33811,-8.54983 -40.81854,-18.24883c-3.76928,-2.57414 -8.22806,-1.93061 -12.96265,1.19514c-9.46917,7.99823 -18.66253,20.31734 -18.66253,31.34938c-0.5516,14.89325 19.35203,27.8559 38.33633,27.8559c16.73192,0 41.37014,-10.48044 67.29543,-35.11866c35.44042,-33.60175 61.96328,-79.70648 84.11929,-179.36256c14.24972,-63.61809 20.96087,-104.98823 30.98164,-163.18223l59.84881,-5.42409l12.96265,-23.76485h-67.38737c17.42143,-109.58491 31.02761,-125.8112 47.75953,-125.8112c11.12397,0 24.08662,8.54983 38.97987,25.37369c4.41282,6.06762 11.03204,5.42409 16.08839,1.28707c8.50386,-5.05635 18.9843,-18.019 19.6738,-29.7865c0.50564,-12.96265 -14.93922,-29.05103 -41.50804,-29.05103c-24.08662,0 -60.99798,16.08839 -92.02559,47.71357c-27.21236,28.8212 -41.46208,64.81323 -51.29898,110.27442h-36.91136zM802.42342,298.13087c18.5706,-24.73015 29.69457,-32.95821 35.44042,-32.95821c5.92972,0 10.6643,5.83779 20.82297,38.6581l17.37546,56.03356c-33.60175,51.39091 -58.194,80.02824 -73.13322,80.02824c-4.96442,0 -9.9748,-1.56287 -13.51425,-5.05635c-3.49348,-3.49348 -7.35469,-6.38939 -11.12397,-6.38939c-12.31911,0 -27.5801,14.93922 -27.8559,33.46385c-0.2758,18.89237 12.96265,32.40661 30.33811,32.40661c29.83247,0 55.06826,-29.28087 103.79309,-106.91884l14.24972,48.03533c12.22718,41.27821 26.56883,58.8835 44.49589,58.8835c22.15601,0 51.94251,-18.89237 84.44106,-69.96151l-13.60618,-15.53679c-19.5359,23.53502 -32.49855,34.56705 -40.17501,34.56705c-8.54983,0 -16.04242,-13.05458 -25.92529,-45.13942l-20.82297,-67.70914c12.31911,-18.1569 24.45435,-33.41788 35.11866,-45.59909c12.68684,-14.47955 22.47778,-20.63911 29.14297,-20.63911c5.60795,0 10.48044,2.39027 13.51425,5.74585c3.99911,4.41282 6.38939,6.48132 11.12397,6.48132c10.71027,0 27.25833,-13.60618 27.8559,-31.62518c0.5516,-16.73192 -9.8369,-30.98164 -27.8559,-30.98164c-27.21236,0 -51.20704,23.44308 -97.40371,92.11752l-9.51513,-29.46474c-13.33038,-41.37014 -22.15601,-62.65278 -40.72661,-62.65278c-21.60441,0 -51.29898,26.56883 -80.35001,68.67444l14.29568,15.53679z" id="CompoundPath-1"/></g></g></g></g></g></svg>
+
+                </button>
+            </div>
+        </div>
+
+        <div id="historyOverlay" class="history-overlay">
+            <div class="history-header">
+                <span class="history-title">
+                    <svg viewBox="0 0 24 24" fill="none" width="25" height="25 xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.5" d="M12 8V12L14.5 14.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5.60414 5.60414L5.07381 5.07381V5.07381L5.60414 5.60414ZM4.33776 6.87052L3.58777 6.87429C3.58984 7.28556 3.92272 7.61844 4.33399 7.62051L4.33776 6.87052ZM6.87954 7.6333C7.29375 7.63539 7.63122 7.30129 7.6333 6.88708C7.63538 6.47287 7.30129 6.1354 6.88708 6.13332L6.87954 7.6333ZM5.07496 4.3212C5.07288 3.90699 4.73541 3.5729 4.3212 3.57498C3.90699 3.57706 3.5729 3.91453 3.57498 4.32874L5.07496 4.3212ZM3.82661 10.7849C3.88286 10.3745 3.59578 9.99627 3.1854 9.94002C2.77503 9.88377 2.39675 10.1708 2.3405 10.5812L3.82661 10.7849ZM18.8622 5.13777C15.042 1.31758 8.86873 1.27889 5.07381 5.07381L6.13447 6.13447C9.33358 2.93536 14.5571 2.95395 17.8016 6.19843L18.8622 5.13777ZM5.13777 18.8622C8.95796 22.6824 15.1313 22.7211 18.9262 18.9262L17.8655 17.8655C14.6664 21.0646 9.44291 21.0461 6.19843 17.8016L5.13777 18.8622ZM18.9262 18.9262C22.7211 15.1313 22.6824 8.95796 18.8622 5.13777L17.8016 6.19843C21.0461 9.44291 21.0646 14.6664 17.8655 17.8655L18.9262 18.9262ZM5.07381 5.07381L3.80743 6.34019L4.86809 7.40085L6.13447 6.13447L5.07381 5.07381ZM4.33399 7.62051L6.87954 7.6333L6.88708 6.13332L4.34153 6.12053L4.33399 7.62051ZM5.08775 6.86675L5.07496 4.3212L3.57498 4.32874L3.58777 6.87429L5.08775 6.86675ZM2.3405 10.5812C1.93907 13.5099 2.87392 16.5984 5.13777 18.8622L6.19843 17.8016C4.27785 15.881 3.48663 13.2652 3.82661 10.7849L2.3405 10.5812Z" fill="#ffffff"></path> </g></svg>
+                </span>
+                <button id="historyClose" class="close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M4.70703,3.29297l-1.41406,1.41406l7.29297,7.29297l-7.29297,7.29297l1.41406,1.41406l7.29297,-7.29297l7.29297,7.29297l1.41406,-1.41406l-7.29297,-7.29297l7.29297,-7.29297l-1.41406,-1.41406l-7.29297,7.29297z"></path></g></g>
+                    </svg>
+                </button>
+            </div>
+            <div id="historyList" class="history-content"></div>
+            <div class="history-footer">
+                <button id="historyClear" class="clear-history-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,4c-3.50831,0 -6.4296,2.62143 -6.91992,6h-6.8418c-0.08516,-0.01457 -0.17142,-0.02176 -0.25781,-0.02148c-0.07465,0.00161 -0.14908,0.00879 -0.22266,0.02148h-3.25781c-0.54095,-0.00765 -1.04412,0.27656 -1.31683,0.74381c-0.27271,0.46725 -0.27271,1.04514 0,1.51238c0.27271,0.46725 0.77588,0.75146 1.31683,0.74381h2.13867l2.51758,26.0293c0.27108,2.80663 2.65553,4.9707 5.47461,4.9707h14.73633c2.81922,0 5.20364,-2.16383 5.47461,-4.9707l2.51953,-26.0293h2.13867c0.54095,0.00765 1.04412,-0.27656 1.31683,-0.74381c0.27271,-0.46725 0.27271,-1.04514 0,-1.51238c-0.27271,-0.46725 -0.77588,-0.75146 -1.31683,-0.74381h-3.25586c-0.15912,-0.02581 -0.32135,-0.02581 -0.48047,0h-6.84375c-0.49032,-3.37857 -3.41161,-6 -6.91992,-6zM24,7c1.87916,0 3.42077,1.26816 3.86133,3h-7.72266c0.44056,-1.73184 1.98217,-3 3.86133,-3zM11.65039,13h24.69727l-2.49219,25.74023c-0.12503,1.29513 -1.18751,2.25977 -2.48828,2.25977h-14.73633c-1.29892,0 -2.36336,-0.96639 -2.48828,-2.25977zM20.47656,17.97852c-0.82766,0.01293 -1.48843,0.69381 -1.47656,1.52148v15c-0.00765,0.54095 0.27656,1.04412 0.74381,1.31683c0.46725,0.27271 1.04514,0.27271 1.51238,0c0.46725,-0.27271 0.75146,-0.77588 0.74381,-1.31683v-15c0.00582,-0.40562 -0.15288,-0.7963 -0.43991,-1.08296c-0.28703,-0.28666 -0.67792,-0.44486 -1.08353,-0.43852zM27.47656,17.97852c-0.82766,0.01293 -1.48843,0.69381 -1.47656,1.52148v15c-0.00765,0.54095 0.27656,1.04412 0.74381,1.31683c0.46725,0.27271 1.04514,0.27271 1.51238,0c0.46725,-0.27271 0.75146,-0.77588 0.74381,-1.31683v-15c0.00582,-0.40562 -0.15288,-0.7963 -0.43991,-1.08296c-0.28703,-0.28666 -0.67792,-0.44486 -1.08353,-0.43852z"></path></g></g>
+                        </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="display-section" id="displayArea">
+            <div id="expressionDisplay" class="expression-line"></div>
+            <div id="resultDisplay" class="result-line">0</div>
+            <div id="copyToast" class="toast">✓</div>
+        </div>
+
+        <div class="keypad-container" id="mainKeypad">
+            
+            <div class="scientific-pad" id="sciPad">
+                <button class="key sci-func" data-cmd="angle-toggle" id="angleBtn">DEG</button>
+                <button class="key sci-func" data-cmd="inv">inv</button>
+                
+                <button class="key sci-func" data-cmd="sin">sin</button>
+                <button class="key sci-func" data-cmd="cos">cos</button>
+                
+                <button class="key sci-func" data-cmd="tan">tan</button>
+                <button class="key sci-func" data-cmd="ln">ln</button>
+                
+                <button class="key sci-func" data-cmd="log">log</button>
+                <button class="key sci-func" data-cmd="fact">x!</button>
+                
+                <button class="key sci-func" data-cmd="pi">π</button>
+                <button class="key sci-func" data-cmd="e">e</button>
+                
+                <button class="key sci-func" data-cmd="pow">xʸ</button>
+                <button class="key sci-func" data-cmd="sqrt">√</button>
+
+                <button class="key sci-func" data-cmd="sinh">sinh</button>
+                <button class="key sci-func" data-cmd="cosh">cosh</button>
+                
+                <button class="key sci-func" data-cmd="tanh">tanh</button>
+                <button class="key sci-func" data-cmd="rand">Rnd</button>
+            </div>
+
+            <div class="standard-pad">
+                <div class="row">
+                    <button class="key memory" data-cmd="mc">MC</button>
+                    <button class="key memory" data-cmd="mr">MR</button>
+                    <button class="key memory" data-cmd="m+">M+</button>
+                    <button class="key memory" data-cmd="m-">M-</button>
+                </div>
+                <div class="row">
+                    <button class="key function" data-cmd="clear">AC</button>
+                    <button class="key function" data-cmd="backspace">⌫</button>
+                    <button class="key function" data-cmd="percent">%</button>
+                    <button class="key operator" data-cmd="div">÷</button>
+                </div>
+                <div class="row">
+                    <button class="key number" data-val="7">7</button>
+                    <button class="key number" data-val="8">8</button>
+                    <button class="key number" data-val="9">9</button>
+                    <button class="key operator" data-cmd="mul">×</button>
+                </div>
+                <div class="row">
+                    <button class="key number" data-val="4">4</button>
+                    <button class="key number" data-val="5">5</button>
+                    <button class="key number" data-val="6">6</button>
+                    <button class="key operator" data-cmd="sub">−</button>
+                </div>
+                <div class="row">
+                    <button class="key number" data-val="1">1</button>
+                    <button class="key number" data-val="2">2</button>
+                    <button class="key number" data-val="3">3</button>
+                    <button class="key operator" data-cmd="add">+</button>
+                </div>
+                <div class="row">
+                    <button class="key number" data-cmd="neg">±</button>
+                    <button class="key number" data-val="0">0</button>
+                    <button class="key number" data-val=".">.</button>
+                    <button class="key equal" data-cmd="calc">=</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="engine.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>

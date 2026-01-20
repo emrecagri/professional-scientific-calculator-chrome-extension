@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Tudományos Számológép - Loruv",
+    "description": "Alkalmazás neve"
+  },
+  "appDesc": {
+    "message": "Modern tudományos számológép sötét témával. Könnyű váltás a normál és tudományos mód között.",
+    "description": "Alkalmazás leírása"
+  }
+}

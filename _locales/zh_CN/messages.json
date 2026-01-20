@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "科学计算器 - Loruv",
+    "description": "应用程序名称"
+  },
+  "appDesc": {
+    "message": "一款专业、现代且采用深色主题的科学计算器。可在普通模式和科学模式之间无缝切换。",
+    "description": "应用程序的描述"
+  }
+}

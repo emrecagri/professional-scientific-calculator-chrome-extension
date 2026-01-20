@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Kalkulator Ilmiah - Loruv",
+    "description": "Nama aplikasi"
+  },
+  "appDesc": {
+    "message": "Kalkulator ilmiah modern dengan tema gelap. Beralih dengan mudah antara mode standar dan ilmiah.",
+    "description": "Deskripsi aplikasi"
+  }
+}

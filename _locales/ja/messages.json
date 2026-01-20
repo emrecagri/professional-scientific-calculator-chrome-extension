@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "科学計算機 - Loruv",
+    "description": "アプリ名"
+  },
+  "appDesc": {
+    "message": "ダークテーマのモダンな科学計算機。標準モードと科学モードを簡単に切り替えられます。",
+    "description": "アプリの説明"
+  }
+}

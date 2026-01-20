@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Wetenschappelijke Rekenmachine - Loruv",
+    "description": "Naam van de applicatie"
+  },
+  "appDesc": {
+    "message": "Moderne wetenschappelijke rekenmachine met donkere modus. Wissel eenvoudig tussen standaard- en wetenschappelijke modus.",
+    "description": "Beschrijving van de applicatie"
+  }
+}

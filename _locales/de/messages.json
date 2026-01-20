@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Wissenschaftlicher Taschenrechner - Loruv",
+    "description": "Der Name der Anwendung"
+  },
+  "appDesc": {
+    "message": "Ein professioneller, moderner und dunkel gestalteter wissenschaftlicher Taschenrechner. Wechseln Sie nahtlos zwischen Normal- und Wissenschaftsmodus.",
+    "description": "Die Beschreibung der Anwendung"
+  }
+}

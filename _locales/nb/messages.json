@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Vitenskapelig Kalkulator - Loruv",
+    "description": "Applikasjonsnavn"
+  },
+  "appDesc": {
+    "message": "Moderne vitenskapelig kalkulator med mørkt tema. Bytt enkelt mellom standard- og vitenskapelig modus.",
+    "description": "Applikasjonsbeskrivelse"
+  }
+}

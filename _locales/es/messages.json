@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Calculadora Científica - Loruv",
+    "description": "El nombre de la aplicación"
+  },
+  "appDesc": {
+    "message": "Una calculadora científica profesional, moderna y con tema oscuro. Cambia sin problemas entre los modos normal y científico.",
+    "description": "La descripción de la aplicación"
+  }
+}

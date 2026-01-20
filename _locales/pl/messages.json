@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Kalkulator Naukowy - Loruv",
+    "description": "Nazwa aplikacji"
+  },
+  "appDesc": {
+    "message": "Nowoczesny kalkulator naukowy w trybie ciemnym. Łatwe przełączanie między trybem standardowym i naukowym.",
+    "description": "Opis aplikacji"
+  }
+}

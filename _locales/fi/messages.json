@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Tieteellinen Laskin - Loruv",
+    "description": "Sovelluksen nimi"
+  },
+  "appDesc": {
+    "message": "Moderni tieteellinen laskin tummalla teemalla. Vaihda helposti perus- ja tieteellisen tilan välillä.",
+    "description": "Sovelluksen kuvaus"
+  }
+}
